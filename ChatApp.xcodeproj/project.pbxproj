@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -104,6 +104,7 @@
 		17A2B9992148C1AE0071D01F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2B8202148C1AB0071D01F /* ConstraintMakerRelatable.swift */; };
 		17E7FC1E2148C9A600C896C6 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E7FC1D2148C9A600C896C6 /* UIImage.swift */; };
 		17E7FC202148C9E900C896C6 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E7FC1F2148C9E800C896C6 /* UIScrollView.swift */; };
+		23D348AA2376CC92008796E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D348A92376CC91008796E3 /* GoogleService-Info.plist */; };
 		2AF1AC1E7033E8282532FB3F /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98920945FDBDABCFBD182CF5 /* Pods_ChatApp.framework */; };
 		376585B92243223D00EEB2EC /* ATCRemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376585B82243223D00EEB2EC /* ATCRemoteData.swift */; };
 /* End PBXBuildFile section */
@@ -209,6 +210,7 @@
 		17A2B8202148C1AB0071D01F /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		17E7FC1D2148C9A600C896C6 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		17E7FC1F2148C9E800C896C6 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		23D348A92376CC91008796E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		376585B82243223D00EEB2EC /* ATCRemoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCRemoteData.swift; sourceTree = "<group>"; };
 		98920945FDBDABCFBD182CF5 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCA2BC4108D73FF4A807779 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				17111D4A2128F29E008C7FBE /* Assets.xcassets */,
 				17111D4C2128F29E008C7FBE /* LaunchScreen.storyboard */,
 				17111D4F2128F29E008C7FBE /* Info.plist */,
+				23D348A92376CC91008796E3 /* GoogleService-Info.plist */,
 				171120642128F45A008C7FBE /* ChatUIConfiguration.swift */,
 				171120662128F4EA008C7FBE /* ChatHostViewController.swift */,
 			);
@@ -618,6 +621,7 @@
 				17A2B9192148C1AD0071D01F /* ATCStoryCollectionViewCell.xib in Resources */,
 				17A2B8D32148C1AD0071D01F /* ATCMenuHeaderTableViewCell.xib in Resources */,
 				17A2B9342148C1AD0071D01F /* ATCCarouselCollectionViewCell.xib in Resources */,
+				23D348AA2376CC92008796E3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,15 +891,17 @@
 			baseConfigurationReference = DFCA2BC4108D73FF4A807779 /* Pods-ChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F9773F85D;
+				DEVELOPMENT_TEAM = W7WHMP9M7S;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.giganom.quickchat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderchat.wonderchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -906,15 +912,17 @@
 			baseConfigurationReference = F17EAD33D7A1CBFDE1C32E23 /* Pods-ChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6F9773F85D;
+				DEVELOPMENT_TEAM = W7WHMP9M7S;
 				INFOPLIST_FILE = ChatApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.giganom.quickchat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderchat.wonderchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
